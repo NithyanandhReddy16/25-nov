@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Count no.of characters</title>
+</head>
+<body>
+  <h2>Count no.of characters</h2>
+  <textarea id="text" inputtype="character()" placeholder="type"></textarea>
+  <p id="demo" >character:0</p>
+  <script>
+    function character(){
+      const text=document.getElementById("text").value;
+      document.getElementById("demo").textContent="character:"+text.length
+    }
+  </script>
+</body>
+</html>
