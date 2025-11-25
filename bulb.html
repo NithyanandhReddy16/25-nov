@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Light On Off</title>
+</head>
+<body>
+  <img id="Light" src="off.png" width="200"><br>
+  <button onclick="onlight()">Light ON</button>
+  <button onclick="offlight()">Light Off</button>
+  <script>
+    function onlight(){
+      const img=document.getElementById("Light");
+      if(img.src.includes("off.png")){
+        img.src="on.png"
+      }
+    }
+    function offlight(){
+      const img=document.getElementById("Light");
+      if(img.src.includes("on.png")){
+        img.src="off.png"
+      }
+    }
+  </script>
+</body>
+</html>
