@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>changing the color</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      flex-direction: column;
+    }
+    #demo{
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-family: Arial;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p id="demo">content</p>
+  </div>
+  <button onclick="change()">change</button>
+  <script>
+    function change(){
+      const doc=document.getElementById("demo");
+      const change='#'+Math.floor(Math.random()*16777215).toString(16);
+      doc.style.backgroundColor=change;
+    }
+  </script>
+</body>
+</html>
